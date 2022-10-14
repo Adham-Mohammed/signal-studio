@@ -4,11 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="icon" href="/static/images/ECG-01.gif">
+    <link rel="stylesheet" href="../static/assets/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../static/images/ECG-01.gif">
     <title>Signal studio</title>
 </head>
 <body>
     
+    <div class="navbar">
+        <div class="first">
+            <div class="icon" >
+                <i class='fa fa-plus' style='font-size:24px'></i>
+              </div>
+            <div class="topnav">
+                <span>New</span>
+            </div>
+        </div>
+        <div class="second">
+            <div class="icon">
+                <i class='fa fa-folder' style='font-size:24px'></i>
+              </div>
+            <div class="topnav">
+                <span>Browse
+                </span>
+            </div>
+        </div>
+
+        <div class="third">
+            <div class="icon">
+                <i class='fa fa-save' style='font-size:24px'></i>
+              </div>
+            <div class="topnav">
+                <span>save
+                </span>
+            </div>
+        </div>
+        <div class="slidecontainer">
+            <div class="fmax">
+                <label for="tentacles">Fmax (HZ):</label>
+                <input type="number" id="tentacles" name="tentacles"min="0" max="100"> 
+            </div>
+            <div class="putnoise"> 
+                <label for="myCheck">Add Noise:</label> 
+                <input type="checkbox" id="myCheck" onclick="myFunction()">
+            </div>
+            <div class="SNR">
+                <p id="text" style="display:none" >SNR</p>
+                <input type="number" id="noise"   style="display:none" name="noise"min="0" max="100">
+            </div>
+            <script>
+            function myFunction() {
+            var checkBox = document.getElementById("myCheck");
+            var text = document.getElementById("text");
+            if (checkBox.checked == true){
+            text.style.display = "block";
+            noise.style.display = "block";
+            } else {
+            text.style.display = "none";
+            noise.style.display = "none";
+            }
+}
+           </script>
+        </div>
+         
+        <div class="forth">
+            <div class="icon">
+                <i class='fa fa-play' style='font-size:24px'></i>
+              </div>
+            <div class="topnav">
+                <span>Simulate</span>
+            </div>
+        </div>
+        <div class="fifth">
+            <div class="icon">
+                <i class='fa fa-bar-chart' style='font-size:24px'></i>
+              </div>
+            <div class="topnav">
+                <span>Sampling
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- slideing bar to over and under smapling -->
+      <!-- <input type="range" min="0" max="1"  class="slider" id="myRange">
+            <p>Value: <span id="demo"></span></p> -->
+          <!-- <script>
+          var slider = document.getElementById("myRange");
+          var output = document.getElementById("demo");
+          output.innerHTML = slider.value;
+          
+          slider.oninput = function() {
+            output.innerHTML = this.value;
+          }
+          </script>
+
 </body>
 </html>

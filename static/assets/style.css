@@ -1,0 +1,112 @@
+
+.navbar{
+  background-color:rgb(194, 191, 191);
+  background-size: auto;
+  overflow: hidden;
+  display:flex
+}
+
+.first{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.second{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+.slidecontainer{
+  display:flex
+}
+.fmax{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.putnoise{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.third{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.forth{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+.fifth{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+}
+/* Change the color of links on hover */
+.first:hover {
+  background-color: #ddd;
+  color: black;
+} 
+
+.second:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.third:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.forth:hover {
+  background-color: #ddd;
+  color: black;
+}
+.fifth:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/* .slidecontainer {
+  width: 50%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+} */
