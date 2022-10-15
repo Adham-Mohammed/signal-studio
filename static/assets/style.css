@@ -13,6 +13,7 @@
 }
 .navbar button{
   border: none;
+  background-color: rgb(194, 191, 191) ;
 }
 
 .nav-btn{
@@ -20,6 +21,7 @@
   text-align: center;
   padding: 14px 16px;
   margin: 3px;
+  
  
 }
 
@@ -57,13 +59,19 @@
 
 }
 .fig{
+  width: 60%;
 
 }
-
+.slider{
+  width: 40%;
+  position: relative;
+  left: 40%;
+}
 .main{
   width: 60%;
-  margin: 24% auto;
+  /* margin: 24% auto; */
   position: relative;
+  display: inline-block;
 }
 
 #slider{
@@ -92,37 +100,13 @@
   z-index: 2;
 }
 .selectorBtn{
-  height: 46px;
-  width: 41px;
-  background-image: url(/static/images/slider.png);
-  background-size: cover;
-  background-position: center;
+  height: 18px;
+  width: 18px;
+  background-color: #1b458d;
   border-radius: 50%;
   position: absolute;
-  bottom: 6px;
-  left: 3px;
-}
-#selectorValue{
-  width: 48px;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  background: #1b458d;
-  border-radius: 4px;
-  text-align: center;
-  line-height: 45px;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-}
-#selectorValue::after{
-  content: '';
-  border-top: 17px solid #1b458d;
-  border-left: 24px solid white;
-  border-right: 24px solid white;
-  position: absolute;
-  bottom: -14px;
-  left: 0;
+  bottom: 20px;
+  left: 20px;
 }
 #bar{
   width: 50%;
@@ -133,8 +117,19 @@
   top: 10px;
   left: 0;
 }
-.onclick{
-  background-color: rgb(194, 191, 191) ;
+#value{
+  /* width: 48px;
+  height: 40px;
+  position: fixed;
+  top: -5px;
+  left: 900px;
+  text-align: center;
+  line-height: 45px; */
+  background-color:white;
+  /* font-size: 20px; */
+  font-weight: bold;
+  padding-left: 10px;
+  color: #1b458d;
 }
 .SNR{
   padding-right: 16px;

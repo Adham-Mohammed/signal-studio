@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
-from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
 import os
 import numpy as np
 import struct

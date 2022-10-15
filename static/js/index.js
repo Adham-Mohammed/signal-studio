@@ -14,12 +14,13 @@ function showSNR() {
 //slide functions
 let slider = document.getElementById("slider")
 let selector = document.getElementById("selector")
-let selectorValue = document.getElementById("selectorValue")
+let value=document.getElementById("value")
 let bar = document.getElementById("bar")
 
-selectorValue.innerHTML=slider.value
+
+value.innerHTML=slider.value +"fmax"
 slider.oninput =function(){
-    selectorValue.innerHTML=this.value
+    value.innerHTML=this.value+"fmax"
     selector.style.left = this.value + "%"
     bar.style.width = this.value + "%"
 }
