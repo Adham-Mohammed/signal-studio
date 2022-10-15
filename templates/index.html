@@ -47,60 +47,66 @@
             </div>
             <div class="putnoise"> 
                 <label for="myCheck">Add Noise:</label> 
-                <input type="checkbox" id="myCheck" onclick="myFunction()">
+                <input type="checkbox" id="myCheck" onclick="showSNR()">
             </div>
             <div class="SNR">
                 <p id="text" style="display:none" >SNR</p>
                 <input type="number" id="noise"   style="display:none" name="noise"min="0" max="100">
             </div>
-            <script>
-            function myFunction() {
-            var checkBox = document.getElementById("myCheck");
-            var text = document.getElementById("text");
-            if (checkBox.checked == true){
-            text.style.display = "block";
-            noise.style.display = "block";
-            } else {
-            text.style.display = "none";
-            noise.style.display = "none";
-            }
-}
-           </script>
-        </div>
-         
-        <div class="forth">
-            <div class="icon">
-                <i class='fa fa-play' style='font-size:24px'></i>
-              </div>
-            <div class="topnav">
-                <span>Simulate</span>
+
+            <div class="forth">
+                <div class="icon">
+                    <i class='fa fa-play' style='font-size:24px'></i>
+                  </div>
+                <div class="topnav">
+                    <span>Simulate</span>
+                </div>
             </div>
-        </div>
-        <div class="fifth">
-            <div class="icon">
-                <i class='fa fa-bar-chart' style='font-size:24px'></i>
-              </div>
-            <div class="topnav">
-                <span>Sampling
-                </span>
+            <div class="fifth">
+                <div class="icon">
+                    <i class='fa fa-bar-chart' style='font-size:24px'></i>
+                  </div>
+                <div class="topnav">
+                    <span>Sampling
+                    </span>
+                </div>
             </div>
         </div>
     </div>
-
-
     
-    <!-- slideing bar to over and under smapling -->
-      <!-- <input type="range" min="0" max="1"  class="slider" id="myRange">
-            <p>Value: <span id="demo"></span></p> -->
-          <!-- <script>
-          var slider = document.getElementById("myRange");
-          var output = document.getElementById("demo");
-          output.innerHTML = slider.value;
-          
-          slider.oninput = function() {
-            output.innerHTML = this.value;
-          }
-          </script>
+    <div id="box">
+        <div class="fig"></div>
+        
+        <!-- slider  -->
+        <div class="main">
+            <input type="range" min="0" max="100" value="50" id="slider">
+            <div id="selector">
+                <div class="selectorBtn"></div>
+                <div id="selectorValue"></div>
+            </div>
+            <div id="bar"></div>
+            
+        </div>
+        
 
+    </div>
+
+
+
+    <!-- slideing bar to over and under smapling -->
+    <!-- <input type="range" min="0" max="1"  class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p> 
+    <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    
+    slider.oninput = function() {
+      output.innerHTML = this.value;}
+    </script> -->
+
+
+
+ <script src="/static/index.js"></script> 
 </body>
 </html>
