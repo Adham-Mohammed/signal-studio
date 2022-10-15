@@ -164,8 +164,12 @@
   top: 10px;
   left: 0;
 }
-
-
+.onclick{
+  background-color: rgb(194, 191, 191) ;
+}
+.SNR{
+  padding-right: 16px;
+}
  /* naira version of slider */
 /* .slidecontainer {
   width: 50%;

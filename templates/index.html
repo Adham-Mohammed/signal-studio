@@ -8,11 +8,13 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="../static/images/ECG-01.gif">
+    <script type="text/javascript" src="../static/js/index.js"></script>
     <title>Signal studio</title>
 </head>
 <body>
     
     <div class="navbar">
+        <button class="onclick">
         <div class="first">
             <div class="icon" >
                 <i class='fa fa-plus' style='font-size:24px'></i>
@@ -20,7 +22,8 @@
             <div class="topnav">
                 <span>New</span>
             </div>
-        </div>
+        </div></button>
+        <button class="onclick">
         <div class="second">
             <div class="icon">
                 <i class='fa fa-folder' style='font-size:24px'></i>
@@ -29,8 +32,9 @@
                 <span>Browse
                 </span>
             </div>
-        </div>
+        </div></button>
 
+        <button class="onclick">
         <div class="third">
             <div class="icon">
                 <i class='fa fa-save' style='font-size:24px'></i>
@@ -39,7 +43,7 @@
                 <span>save
                 </span>
             </div>
-        </div>
+        </div></button>
         <div class="slidecontainer">
             <div class="fmax">
                 <label for="tentacles">Fmax (HZ):</label>
@@ -53,7 +57,7 @@
                 <p id="text" style="display:none" >SNR</p>
                 <input type="number" id="noise"   style="display:none" name="noise"min="0" max="100">
             </div>
-
+            <button class="onclick">
             <div class="forth">
                 <div class="icon">
                     <i class='fa fa-play' style='font-size:24px'></i>
@@ -61,7 +65,8 @@
                 <div class="topnav">
                     <span>Simulate</span>
                 </div>
-            </div>
+            </div></button>
+            <button class="onclick">
             <div class="fifth">
                 <div class="icon">
                     <i class='fa fa-bar-chart' style='font-size:24px'></i>
@@ -70,7 +75,7 @@
                     <span>Sampling
                     </span>
                 </div>
-            </div>
+            </div></button>
         </div>
     </div>
     
