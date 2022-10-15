@@ -4,24 +4,25 @@
   padding: 0;
 
 }
+
 .navbar{
   background-color:rgb(194, 191, 191);
   background-size: auto;
   overflow: hidden;
   display:flex
 }
+.navbar button{
+  border: none;
+}
 
-.first{
+.nav-btn{
   float: left;
   text-align: center;
   padding: 14px 16px;
+  margin: 3px;
+ 
 }
 
-.second{
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-}
 .slidecontainer{
   display:flex
 }
@@ -37,46 +38,14 @@
   padding: 14px 16px;
 }
 
-.third{
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-}
-
-.forth{
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-}
-.fifth{
-  float: left;
-  text-align: center;
-  padding: 14px 16px;
-}
 /* Change the color of links on hover */
-.first:hover {
+.nav-btn:hover {
   background-color: #ddd;
   color: black;
+  cursor: pointer;
 } 
-
-.second:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
-.third:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.forth:hover {
-  background-color: #ddd;
-  color: black;
-}
-.fifth:hover {
-  background-color: #ddd;
-  color: black;
+.nav-btn:active{
+  box-shadow: 1px 1px 3px 1px rgb(0, 0, 16) inset;
 }
 
 #box{
@@ -170,6 +139,7 @@
 .SNR{
   padding-right: 16px;
 }
+
  /* naira version of slider */
 /* .slidecontainer {
   width: 50%;
